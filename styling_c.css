@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6; /* Light red background */
+    color: #333; /* Dark text for readability */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9999; /* Light red header */
+    color: white;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffcccc; /* Soft red content box */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    text-align: center;
+    color: #990000; /* Darker red for headings */
+    margin-bottom: 20px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.content form input,
+.content form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ff9999;
+    border-radius: 5px;
+}
+
+.content form button {
+    background-color: #ff6666; /* Medium red button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content form button:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
+.links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #ff9999; /* Light red links */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #ff6666; /* Medium red on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff9999; /* Light red footer */
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d00; /* Deep green */
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 2; /* Bring it above other elements */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Default display for desktop */
+    gap: 15px;
+    position: relative;
+    background-color: transparent; /* Transparent for desktop */
+    box-shadow: none; /* Remove shadow for desktop */
+    padding: 0; /* No padding for desktop */
+}
+
+.navbar ul.active {
+    display: flex; /* Show dropdown on toggle */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #004d00; /* Background for dropdown */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin: 5px 0; /* Space between items in dropdown */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #008000; /* Lighter green */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger by default for desktop */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3; /* Ensure it stays above other elements */
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide by default for mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #004d00;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger for mobile */
+    }
+}

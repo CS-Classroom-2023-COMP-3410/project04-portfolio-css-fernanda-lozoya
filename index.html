@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Fernanda Lozoya</title>
+    <link rel="stylesheet" href="styliing_index.css">
+
+
+    <nav class="navbar">
+        <div class="logo">Fernanda Lozoya</div>
+        <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</head>
+<body>
+    <header>
+        <img src="images/bmw-logo.png" alt="BMW Logo" class="left-logo">
+        <h1>Fernanda Lozoya</h1>
+        <img src="images/bmw-logo.png" alt="BMW Logo" class="right-logo">
+    </header>
+    <div class="content">
+        <div class="section" id="bmw-motorsport">
+            <h2>BMW Motorsport</h2>
+            <img src="images/bmwWP.png" alt="BMW Motorsport Image">
+            <p>The German brand's iconic F30s-F80s models with their famous angel Eyes.</p>
+            <img src="images/bmw-angelEye.png" alt="BMW EYE">
+        </div>
+        <div class="section" id="f1-news">
+            <h2>Formula 1: Motorsports Passion</h2>
+            <img src="images/perez1.png" alt="F1 Driver Image">
+            <p>F1 Driver Sergio Perez at Mexican GP 2023. A Race that ended in heartbreak for my favorite Mexican driver.</p>
+            <img src="images/redbull1.png" alt="F1 Race Image">
+        </div>
+    </div>
+    <footer>
+        <img src="images/mexico-flag.png" alt="Mexico Flag">
+        <img src="images/us-flag.png" alt="US Flag">
+    </footer>
+  
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+    
+    
+</body>
+</html>

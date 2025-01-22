@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000080; /* Dark navy blue header */
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #003366; /* Deep navy blue content box */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+    text-align: center;
+    color: #ffffff; /* White text for headings */
+    margin-bottom: 20px;
+}
+
+.hobby {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hobby img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle glow */
+}
+
+.links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #004080; /* Medium navy blue for links */
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #00509e; /* Lighter navy on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000080; /* Dark navy blue footer */
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d00; /* Deep green */
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 2; /* Bring it above other elements */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Default display for desktop */
+    gap: 15px;
+    position: relative;
+    background-color: transparent; /* Transparent for desktop */
+    box-shadow: none; /* Remove shadow for desktop */
+    padding: 0; /* No padding for desktop */
+}
+
+.navbar ul.active {
+    display: flex; /* Show dropdown on toggle */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #004d00; /* Background for dropdown */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin: 5px 0; /* Space between items in dropdown */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #008000; /* Lighter green */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger by default for desktop */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3; /* Ensure it stays above other elements */
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide by default for mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #004d00;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger for mobile */
+    }
+}

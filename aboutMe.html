@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Fernanda Lozoya</title>
+    <link rel="stylesheet" href="styling_AM.css">
+
+
+    <nav class="navbar">
+        <div class="logo">Fernanda Lozoya</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div class="content">
+        <img src="images/profile.png" alt="Profile Photo" class="profile-photo">
+        <h2>Fernanda Lozoya</h2>
+        <p>Hello! My name is Fernanda Lozoya, and I am passionate about BMWs, Formula 1, and guitars. My love for cars, especially BMWs, stems from their engineering excellence and sleek designs. I enjoy staying up-to-date with motorsport events, particularly Formula 1, which keeps me on the edge of my seat every race weekend!</p>
+        <p>Aside from cars, I have a deep connection to music. Playing the guitar is not just a hobby but a way to express myself creatively. Whether it’s classic rock or modern tunes, my guitar is always by my side.</p>
+        <p>With roots in both Mexico and the United States, my heritage plays a significant role in shaping who I am. The blend of cultures gives me a unique perspective and fuels my ambition to explore diverse opportunities.</p>
+        
+        <h2>My Favorite Songs</h2>
+        <table>
+            <tr>
+                <th>Song</th>
+                <th>Artist</th>
+            </tr>
+            <tr>
+                <td>Lies Lies Lies</td>
+                <td>Morgan Wallen</td>
+            </tr>
+            <tr>
+                <td>Love Somebody</td>
+                <td>Morgan Wallen</td>
+            </tr>
+            <tr>
+                <td>Die with a Smile</td>
+                <td>Bruno Mars and Lady Gaga</td>
+            </tr>
+            <tr>
+                <td>Oye Mi Amor</td>
+                <td>Maná</td>
+            </tr>
+            <tr>
+                <td>Wildflower</td>
+                <td>Billie Eilish</td>
+            </tr>
+            <tr>
+                <td>Chihiro</td>
+                <td>Billie Eilish</td>
+            </tr>
+        </table>
+    </div>
+  
+    <footer>
+        <p>&copy; 2025 Fernanda Lozoya</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

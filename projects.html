@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Fernanda Lozoya</title>
+    <link rel="stylesheet" href="styling_proj.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Fernanda Lozoya</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Technical Projects</h2>
+        <ul>
+            <li><strong>Design:</strong>
+                <ul>
+                    <li>Design competition for prototype design in SolidWorks and 3D print.</li>
+                    <li>Presented a draft of the design before voting for the best prototype to present to KONG.</li>
+                </ul>
+            </li>
+            <li><strong>Library Data Interface:</strong>
+                <ul>
+                    <li>Built Python library database interface that ensured efficient search categories.</li>
+                    <li>Implemented using DAO to manage SQL database queries which would then send data to a GUI file.</li>
+                </ul>
+            </li>
+            <li><strong>Linux Shell Emulator:</strong>
+                <ul>
+                    <li>Created a custom Linux shell to manage basic command-line operations and shell scripting.</li>
+                    <li>Demonstrates skills in Linux environment manipulation.</li>
+                </ul>
+            </li>
+            <li><strong>Data Management and Manipulation:</strong>
+                <ul>
+                    <li>Wrote SQL scripts to migrate data, handle missing values, and ensure data integrity using primary and foreign keys.</li>
+                    <li>Developed stored procedures to query sales by various distinctive categories, enhancing query performance and enabling data-driven insights.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2025 Fernanda Lozoya</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

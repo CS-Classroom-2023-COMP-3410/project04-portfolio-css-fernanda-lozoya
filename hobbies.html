@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Fernanda Lozoya</title>
+    <link rel="stylesheet" href="styling_h.css">
+
+
+    <nav class="navbar">
+        <div class="logo">Fernanda Lozoya</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</head>
+<body>
+    <header>
+        <h1>Hobbies</h1>
+    </header>
+    <div class="content">
+        <h2>Things I Enjoy</h2>
+
+        <div class="hobby">
+            <h3>Playing Guitar</h3>
+            <img src="images/guitar.png" alt="Guitar">
+            <p>I love expressing myself creatively through music, especially with my guitar.</p>
+        </div>
+
+        <div class="hobby">
+            <h3>BMW Enthusiasm</h3>
+            <img src="images/bmw-comp.png" alt="BMW Competition">
+            <p>Cars, particularly BMWs, have always fascinated me for their design and engineering.</p>
+        </div>
+
+        <div class="hobby">
+            <h3>Formula 1</h3>
+            <img src="images/grid.png" alt="F1 Starting Grid">
+            <p>Watching F1 races and keeping up with motorsport news is something I truly enjoy.</p>
+        </div>
+
+        <div class="hobby">
+            <h3>Gym</h3>
+            <img src="images/gym.png" alt="Gym">
+            <p>Staying fit and spending time at the gym helps me maintain my well-being and focus.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Fernanda Lozoya</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
